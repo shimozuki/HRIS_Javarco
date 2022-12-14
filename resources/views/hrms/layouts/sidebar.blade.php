@@ -20,7 +20,7 @@
 <ul class="nav sidebar-menu scrollable">
     <li class="active">
         <a  href="{{route('dashboard')}}">
-            <span class="fa fa-dashboard"></span>
+            <span class="fas fa-tachometer-alt"></span>
             <span class="sidebar-title">Dashboard</span>
         </a>
     </li>
@@ -143,7 +143,7 @@
         </li>
         <li>
             <a class="accordion-toggle" href="/dashboard">
-                <span class="fa fa fa-laptop"></span>
+                <span class="fa fa fa-gas-pump"></span>
                 <span class="sidebar-title">Produk</span>
                 <span class="caret"></span>
             </a>
@@ -205,7 +205,7 @@
     @if(Auth::user()->isHR())
         <li>
             <a class="accordion-toggle" href="/dashboard">
-                <span class="fa fa-arrow-circle-o-up"></span>
+                <span class="fas fa-arrow-circle-up"></span>
                 <span class="sidebar-title">Kenaikan Jabatan</span>
                 <span class="caret"></span>
             </a>
@@ -325,4 +325,5 @@
 
     <p> &nbsp; </p>
 </ul>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <!-- -------------- /Sidebar Menu  -------------- -->

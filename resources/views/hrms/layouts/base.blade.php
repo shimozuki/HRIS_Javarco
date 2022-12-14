@@ -35,7 +35,7 @@
 
     <link rel="stylesheet" type="text/css" href="assets/js/plugins/select2/css/core.css">
     <!-- -------------- Favicon -------------- -->
-    <link rel="shortcut icon" href="/assets/img/favicon.png">
+    <!-- <link rel="shortcut icon" href="/assets/img/favicon.png"> -->
 
     <!--  Custom css -->
     <link rel="stylesheet" type="text/css" href="/assets/custom.css">
