@@ -38,9 +38,9 @@
                     <div class="panel-body">
                         <div class="row pv10">
                             <div class="col-xs-5 ph10">
-                                <img src="/assets/img/pages/clipart2.png" class="img-responsive mauto" alt=""/></div>
+                                <img src="/assets/img/pages/user.png" class="img-responsive mauto" alt=""/></div>
                             <div class="col-xs-7 pl5">
-                                <h3 class="text-muted"><a href="{{route('employee-manager')}}"> EMPLOYEE MANAGER</a></h3>
+                                <h3 class="text-muted"><a href="{{route('employee-manager')}}"> Karyawan</a></h3>
                                 {{--<h2 class="fs50 mt5 mbn">385</h2>--}}
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                 <div class="panel panel-tile">
                     <div class="panel-body">
                         <div class="row pv10">
-                            <div class="col-xs-5 ph10"><img src="/assets/img/pages/clipart0.png"
+                            <div class="col-xs-5 ph10"><img src="/assets/img/pages/to-do-list.png"
                                                             class="img-responsive mauto" alt=""/></div>
                             <div class="col-xs-7 pl5">
                                 <h3 class="text-muted"> <a href="{{route('total-leave-list')}}"> LEAVE <br/> MANAGER </a></h3>
@@ -64,10 +64,10 @@
                     <div class="panel panel-tile">
                         <div class="panel-body">
                             <div class="row pv10">
-                                <div class="col-xs-5 ph10"><img src="/assets/img/pages/Laptop Sketch-64x64"
+                                <div class="col-xs-5 ph10"><img src="/assets/img/pages/gas.png"
                                                                 class="img-responsive mauto" style="height: 100px; width: 100px;" alt=""/></div>
                                 <div class="col-xs-7 pl5">
-                                    <h3 class="text-muted"> <a href="{{route('asset-listing')}}"> ASSET <br /> MANAGER </a></h3>
+                                    <h3 class="text-muted"> <a href="{{route('asset-listing')}}"> Produk</h3>
                                 </div>
                             </div>
                         </div>
@@ -77,7 +77,7 @@
                     <div class="panel panel-tile">
                         <div class="panel-body">
                             <div class="row pv10">
-                                <div class="col-xs-5 ph10"><img src="/assets/img/pages/dollar.jpg"
+                                <div class="col-xs-5 ph10"><img src="/assets/img/pages/wallet.png"
                                                                 class="img-responsive mauto" style="height: 100px; width: 100px;" alt=""/></div>
                                 <div class="col-xs-7 pl5">
                                     <h3 class="text-muted"> <a href="{{route('expense-list')}}"> EXPENSE <br /> MANAGER </a></h3>
@@ -90,7 +90,7 @@
                 <div class="panel panel-tile">
                     <div class="panel-body">
                         <div class="row pv10">
-                            <div class="col-xs-5 ph10"><img src="/assets/img/pages/clipart5.png"
+                            <div class="col-xs-5 ph10"><img src="/assets/img/pages/alarm-clock.png"
                                                             class="img-responsive mauto" alt=""/></div>
                             <div class="col-xs-7 pl5">
                                 <h3 class="text-muted"><a href="{{route('attendance-manager')}}"> ATTENDANCE MANAGER </a></h3>
@@ -122,7 +122,7 @@
                 <div class="panel panel-tile">
                     <div class="panel-body">
                         <div class="row pv10">
-                            <div class="col-xs-5 ph10"><img src="/assets/img/pages/clipart6.png"
+                            <div class="col-xs-5 ph10"><img src="/assets/img/pages/copyright.png"
                                                             class="img-responsive mauto" alt=""/></div>
                             <div class="col-xs-7 pl5">
                                 <h3 class="text-muted"><a href="{{route('hr-policy')}}"> HR POLICIES </a></h3>

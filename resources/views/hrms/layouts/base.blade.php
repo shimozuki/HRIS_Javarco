@@ -4,7 +4,7 @@
 <head>
     <!-- -------------- Meta and Title -------------- -->
     <meta charset="utf-8">
-    <title> Human Resource Management System </title>
+    <title> PT. Javarco Sumbawa </title>
     <meta name="description" content="HRMS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf_token" content="{{csrf_token()}}">
@@ -480,8 +480,8 @@
         <footer id="content-footer" class="affix">
             <div class="row">
                 <div class="col-md-6">
-                    <span class="footer-legal">KANAK © 2016 All rights reserved. By <a
-                                href="http://www.kanakmanjari.com/" target="_blank">Kanak Manjari</a></span>
+                    <span class="footer-legal">HRIS ©2022 All rights reserved. By <a
+                                href="https://www.sistertech.com/76/33/39-javarco-jasa-transportasi-bbm-sumbawa-besar.htm" target="_blank">PT.javarcoSumbawa.com</a></span>
                 </div>
                 <div class="col-md-6 text-right">
                     <span class="footer-meta"></span>

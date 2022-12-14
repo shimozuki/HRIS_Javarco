@@ -28,22 +28,22 @@
         <li>
             <a class="accordion-toggle" href="/dashboard">
                 <span class="fa fa-user"></span>
-                <span class="sidebar-title">Employees</span>
+                <span class="sidebar-title">karyawan</span>
                 <span class="caret"></span>
             </a>
             <ul class="nav sub-nav">
                 <li>
                     <a href="{{route('add-employee')}}">
-                        <span class="glyphicon glyphicon-tags"></span> Add Employee </a>
+                        <span class="glyphicon glyphicon-tags"></span> Add Karyawan </a>
                 </li>
                 <li>
                     <a href="{{route('employee-manager')}}">
-                        <span class="glyphicon glyphicon-tags"></span> Employee Listing </a>
+                        <span class="glyphicon glyphicon-tags"></span> Data karyawan </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="{{route('upload-emp')}}">
                         <span class="glyphicon glyphicon-tags"></span> Upload </a>
-                </li>
+                </li> -->
             </ul>
         </li>
 
@@ -51,18 +51,18 @@
             <li>
                 <a class="accordion-toggle" href="/dashboard">
                     <span class="fa fa-user"></span>
-                    <span class="sidebar-title">Clients</span>
+                    <span class="sidebar-title">Agen</span>
                     <span class="caret"></span>
                 </a>
                 <ul class="nav sub-nav">
                     <li>
                         <a href="{{route('add-client')}}">
-                            <span class="glyphicon glyphicon-tags"></span> Add Client </a>
+                            <span class="glyphicon glyphicon-tags"></span> Tambah Agen </a>
                     </li>
 
                     <li>
                         <a href="{{route('list-client')}}">
-                            <span class="glyphicon glyphicon-tags"></span> List Client </a>
+                            <span class="glyphicon glyphicon-tags"></span> Data Agen </a>
                     </li>
                 </ul>
             </li>
@@ -144,26 +144,26 @@
         <li>
             <a class="accordion-toggle" href="/dashboard">
                 <span class="fa fa fa-laptop"></span>
-                <span class="sidebar-title">Assets</span>
+                <span class="sidebar-title">Produk</span>
                 <span class="caret"></span>
             </a>
             <ul class="nav sub-nav">
                 <li>
                     <a href="{{route('add-asset')}}">
-                        <span class="glyphicon glyphicon-shopping-cart"></span> Add Asset </a>
+                        <span class="glyphicon glyphicon-shopping-cart"></span> Tambah Produk </a>
                 </li>
                 <li>
                     <a href="{{route('asset-listing')}}">
-                        <span class="glyphicon glyphicon-calendar"></span> Asset Listings </a>
+                        <span class="glyphicon glyphicon-calendar"></span> Data Produk </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="{{route('assign-asset')}}">
                         <span class="fa fa-desktop"></span> Assign Asset </a>
                 </li>
                 <li>
                     <a href="{{route('assignment-listing')}}">
                         <span class="fa fa-clipboard"></span> Assignment Listings </a>
-                </li>
+                </li> -->
             </ul>
         </li>
     @endif
@@ -206,17 +206,17 @@
         <li>
             <a class="accordion-toggle" href="/dashboard">
                 <span class="fa fa-arrow-circle-o-up"></span>
-                <span class="sidebar-title">Promotions</span>
+                <span class="sidebar-title">Kenaikan Jabatan</span>
                 <span class="caret"></span>
             </a>
             <ul class="nav sub-nav">
                 <li>
                     <a href="/promotion">
-                        <span class="glyphicon glyphicon-book"></span> Promote </a>
+                        <span class="glyphicon glyphicon-book"></span> Promote jabatan </a>
                 </li>
                 <li>
                     <a href="/show-promotion">
-                        <span class="glyphicon glyphicon-modal-window"></span> Promotion Listings </a>
+                        <span class="glyphicon glyphicon-modal-window"></span> Jabatan </a>
                 </li>
             </ul>
         </li>
@@ -224,43 +224,17 @@
         <li>
             <a class="accordion-toggle" href="/dashboard">
                 <span class="fa fa-money"></span>
-                <span class="sidebar-title">Expenses</span>
+                <span class="sidebar-title">Gaji</span>
                 <span class="caret"></span>
             </a>
             <ul class="nav sub-nav">
                 <li>
                     <a href="{{route('add-expense')}}">
-                        <span class="glyphicon glyphicon-book"></span> Add Expense </a>
+                        <span class="glyphicon glyphicon-book"></span> Tambah Gaji </a>
                 </li>
                 <li>
                     <a href="{{route('expense-list')}}">
-                        <span class="glyphicon glyphicon-modal-window"></span> Expense Listings </a>
-                </li>
-            </ul>
-        </li>
-
-        <li>
-            <a class="accordion-toggle" href="/dashboard">
-                <span class="fa fa fa-trophy"></span>
-                <span class="sidebar-title">Awards</span>
-                <span class="caret"></span>
-            </a>
-            <ul class="nav sub-nav">
-                <li>
-                    <a href="/add-award">
-                        <span class="fa fa-adn"></span> Add Award </a>
-                </li>
-                <li>
-                    <a href="/award-listing">
-                        <span class="glyphicon glyphicon-calendar"></span> Award Listings </a>
-                </li>
-                <li>
-                    <a href="/assign-award">
-                        <span class="fa fa-desktop"></span> Awardees </a>
-                </li>
-                <li>
-                    <a href="/awardees-listing">
-                        <span class="fa fa-clipboard"></span> Awardees Listings </a>
+                        <span class="glyphicon glyphicon-modal-window"></span> Listings Gaji</a>
                 </li>
             </ul>
         </li>
@@ -348,21 +322,7 @@
             </a>
         </li>
     @endif
-    <li>
 
-        <a href="/download-forms">
-            <span class="fa fa-book"></span>
-            <span class="sidebar-title">Download Forms</span>
-
-        </a>
-    </li>
-
-    <li>
-        <a href="/hr-policy">
-            <span class="fa fa-gavel"></span>
-            <span class="sidebar-title"> Company Policy </span>
-        </a>
-    </li>
     <p> &nbsp; </p>
 </ul>
 <!-- -------------- /Sidebar Menu  -------------- -->
