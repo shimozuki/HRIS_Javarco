@@ -4,7 +4,7 @@
 <head>
     <!-- -------------- Meta and Title -------------- -->
     <meta charset="utf-8">
-    <title>Human Resource Management System</title>
+    <title>PT. Javarco</title>
     <meta name="keywords" content="HTML5, Bootstrap 3, Admin Template, UI Theme"/>
     <meta name="description" content="Alliance - A Responsive HTML5 Admin UI Framework">
     <meta name="author" content="ThemeREX">
@@ -22,7 +22,6 @@
     <link rel="stylesheet" type="text/css" href="/assets/allcp/forms/css/forms.css">
 
     <!-- -------------- Favicon -------------- -->
-    <link rel="shortcut icon" href="/assets/img/favicon.png">
 
     <!-- -------------- IE8 HTML5 support  -------------- -->
     <!--[if lt IE 9]>

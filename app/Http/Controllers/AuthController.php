@@ -43,7 +43,7 @@
                 \Session::flash('message', 'User id or password does not match!');
             }
 
-            return redirect()->to('/');
+            return redirect()->to('/dashboard');
         }
 
         public function doLogout()
