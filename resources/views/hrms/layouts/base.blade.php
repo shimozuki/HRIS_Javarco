@@ -16,7 +16,7 @@
 
 
     <!-- -------------- Icomoon -------------- -->
-    <link rel="stylesheet" type="text/css" href="/assets/fonts/icomoon/icomoon.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/fonts/icomoon/icomoon.css"> -->
 
     <!-- -------------- FullCalendar -------------- -->
     <link rel="stylesheet" type="text/css" href="/assets/js/plugins/fullcalendar/fullcalendar.min.css">
