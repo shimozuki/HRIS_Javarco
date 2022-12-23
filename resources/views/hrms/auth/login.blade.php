@@ -49,7 +49,7 @@
             <!-- -------------- Login Form -------------- -->
             <div class="allcp-form theme-primary mw320" id="login">
                 <div class="bg-primary text-center mb20 br3 pv15">
-                <span style="color:#FFFFFF"><strong><u>H</u>uman <u>R</u>esource <u>M</u>anagement <u>S</u>ystem</strong></span>
+                <span style="color:#FFFFFF"><strong>PT. Javarco Sumbawa</strong></span>
                 </div>
                 <div class="panel mw320">
 

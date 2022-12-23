@@ -282,9 +282,9 @@
                             <a href="/dashboard">Dashboard</a>
                         </li>
                         <li class="breadcrumb-link">
-                            <a href="/add-employee"> Employees </a>
+                            <a href="/add-employee"> Karyawan </a>
                         </li>
-                        <li class="breadcrumb-current-item"> Add Details</li>
+                        <li class="breadcrumb-current-item"> Tambah Karyawan</li>
                     </ol>
                 </div>
 
@@ -314,7 +314,7 @@
 
                                 <!-- -------------- step 1 -------------- -->
                                 <h4 class="wizard-section-title">
-                                    <i class="fa fa-user pr5"></i> Personal Details</h4>
+                                    <i class="fa fa-user pr5"></i> Data Diri</h4>
                                 <section class="wizard-section">
                                     <div class="section">
                                         <label for="photo-upload"><h6 class="mb20 mt40"> Photo </h6></label>
@@ -347,7 +347,7 @@
                                     <!-- -------------- /section -------------- -->
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40">Employee Code</h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40">Code Pegawai</h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="emp_code" id="emp_code" class="gui-input"
@@ -367,7 +367,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40">Employee Name </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40">Nama Karyawan </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="emp_name" id="emp_name" class="gui-input"
@@ -387,29 +387,29 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40">Employment Status </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40">Status Pekerjaan </h6></label>
                                         <div class="option-group field">
                                             <label class="field option mb5">
                                                 @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="radio" name="emp_status" id="emp_status" value="1"
                                                        @if(isset($emps))@if($emps->employee->status == '1') checked @endif @endif>
-                                                <span class="radio"></span>Present</label>
+                                                <span class="radio"></span>Tetap</label>
                                             <label class="field option mb5">
                                                 <input type="radio" name="emp_status" id="emp_status" value="0"
                                                        @if(isset($emps))@if($emps->employee->status == '0') checked @endif @endif>
-                                                <span class="radio"></span>Ex</label>
+                                                <span class="radio"></span>Magang</label>
                                             @else
                                                 <input type="radio" name="emp_status" id="emp_status" value="1">
-                                                <span class="radio"></span>Present</label>
+                                                <span class="radio"></span>Tetap</label>
                                                 <label class="field option mb5">
                                                     <input type="radio" name="emp_status" id="emp_status" value="0" checked>
-                                                    <span class="radio"></span>Ex</label>
+                                                    <span class="radio"></span>Magang</label>
                                             @endif
                                         </div>
                                     </div>
 
                                         <div class="section">
-                                            <label for="input002"><h6 class="mb20 mt40"> Role </h6></label>
+                                            <label for="input002"><h6 class="mb20 mt40"> Divis </h6></label>
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <select class="select2-single form-control" name="role" id="role" readonly required>
                                                     <option value="">Select role</option>
@@ -422,7 +422,7 @@
                                                 </select>
                                                 @else
                                                 <select class="select2-single form-control" name="role" id="role">
-                                                    <option value="">Select role</option>
+                                                    <option value="">Pilih Divisi</option>
                                                     @foreach($roles as $role)
                                                         <option value="{{$role->id}}">{{$role->name}}</option>
                                                     @endforeach
@@ -431,23 +431,23 @@
                                         </div>
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Gender </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Jenis Klamin </h6></label>
                                         <div class="option-group field">
                                             <label class="field option mb5">
                                                 <input type="radio" value="0" name="gender" id="gender"
                                                        @if(isset($emps))@if($emps->employee->gender == '0')checked @endif @endif>
-                                                <span class="radio"></span>Male</label>
+                                                <span class="radio"></span>Pria</label>
                                             <label class="field option mb5">
                                                 <input type="radio" value="1" name="gender" id="gender"
                                                        @if(isset($emps))@if($emps->employee->gender == '1')checked @endif @endif>
-                                                <span class="radio"></span>Female</label>
+                                                <span class="radio"></span>Wanita</label>
                                         </div>
                                     </div>
 
 
                                     <div class="section">
                                         <label for="datepicker1" class="field prepend-icon mb5"><h6 class="mb20 mt40">
-                                                Date of Birth </h6></label>
+                                                Tanggal Lahir </h6></label>
 
                                         <div class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
@@ -468,7 +468,7 @@
 
                                     <div class="section">
                                         <label for="datepicker4" class="field prepend-icon mb5"><h6 class="mb20 mt40">
-                                                Date of Joining </h6></label>
+                                                Tanggal Ajukan Lamaran </h6></label>
 
                                         <div class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
@@ -488,7 +488,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Mobile Number </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Nomor Hp </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="number" name="mob_number" id="mobile_phone"
@@ -509,7 +509,7 @@
                                     </div>
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Qualification </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Pendidikan Terakhir </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
 
@@ -525,7 +525,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Emergency Number </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Nomor WhatsApp </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="number" name="emer_number" id="emergency_number"
@@ -547,13 +547,13 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> PAN Number </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Nomor NPWP </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
-                                                <input type="text" name="pan_number" id="pan_number" class="gui-input"
+                                                <input type="text" name="NPWP" id="pan_number" class="gui-input"
                                                        value="@if($emps && $emps->employee->pan_number){{$emps->employee->pan_number}}@endif">
                                             @else
-                                                <input type="text" placeholder="PAN" name="pan_number"
+                                                <input type="text" placeholder="NPWP" name="pan_number"
                                                        id="pan_number" class="gui-input">
 
                                             @endif
@@ -562,7 +562,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Father's Name </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Nama Ayah </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="father_name" id="father_name" class="gui-input"
@@ -578,7 +578,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Current Address </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Alamat Domisili </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="address" id="address" class="gui-input"
@@ -598,7 +598,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Permanent Address </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Alamat Sesuai KTP </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="permanent_address" id="permanent_address"
@@ -622,34 +622,34 @@
 
                                 <!-- -------------- step 2 -------------- -->
                                 <h4 class="wizard-section-title">
-                                    <i class="fa fa-user-secret pr5"></i> Employment details</h4>
+                                    <i class="fa fa-user-secret pr5"></i> Persyaratan</h4>
                                 <section class="wizard-section">
                                     <!-- -------------- /section -------------- -->
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Joining Formalities </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Lamaran </h6></label>
 
                                         <div class="option-group field">
                                             <label class="field option mb5">
                                                 <input type="radio" value="1" name="formalities"
                                                        id="formalities"
                                                        @if(isset($emps))@if($emps->employee->formalities == '1')checked @endif @endif>
-                                                <span class="radio"></span>Completed</label>
+                                                <span class="radio"></span>Sesuai</label>
                                             <label class="field option mb5">
                                                 <input type="radio" value="0" name="formalities" id="formalities"
                                                        @if(isset($emps))@if($emps->employee->formalities == '0')checked @endif @endif>
-                                                <span class="radio"></span>Pending</label>
+                                                <span class="radio"></span>Tidak Sesuai</label>
                                         </div>
                                     </div>
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Offer Acceptance </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Ijasah </h6></label>
 
                                         <div class="option-group field">
                                             <label class="field option mb5">
                                                 <input type="radio" value="1" name="offer_acceptance"
                                                        id="offer_acceptance"
                                                        @if(isset($emps))@if($emps->employee->offer_acceptance == '1')checked @endif @endif>
-                                                <span class="radio"></span>Completed</label>
+                                                <span class="radio"></span>Lengkap</label>
                                             <label class="field option mb5">
                                                 <input type="radio" value="0" name="offer_acceptance"
                                                        id="offer_acceptance"
@@ -660,7 +660,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Probation Period </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Kontrak Kerja </h6></label>
 
                                                 @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                             <select class="select2-single form-control probation_select" name="prob_period" id="probation_period" >
@@ -707,7 +707,7 @@
 
                                     <div class="section">
                                         <label for="datepicker5" class="field prepend-icon mb5"><h6 class="mb20 mt40">
-                                                Date of Confirmation </h6></label>
+                                                Tanggal TTD kontrak </h6></label>
 
                                         <div class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
@@ -727,7 +727,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Department </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Departemen </h6></label>
                                             <select class="select2-single form-control" name="department" id="department">
                                                 <option value="">Select department</option>
                                                 @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
@@ -754,20 +754,20 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Salary on Confirmation </h6>
+                                        <label for="input002"><h6 class="mb20 mt40"> Gaji </h6>
                                         </label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="salary" id="salary" class="gui-input"
                                                        value="@if($emps && $emps->employee->salary){{$emps->employee->salary}}@endif" readonly>
                                                 <label for="input002" class="field-icon">
-                                                    <i class="fa fa-inr"></i>
+                                                    <!-- <i class="fa fa-inr"></i> -->
                                                 </label>
                                             @else
-                                                <input type="text" placeholder="e.g 12000" name="salary"
+                                                <input type="text" placeholder="Rp.12000" name="salary"
                                                        id="salary" class="gui-input">
                                                 <label for="input002" class="field-icon">
-                                                    <i class="fa fa-inr"></i>
+                                                    <!-- <i class="fa fa-inr"></i> -->
                                                 </label>
                                             @endif
                                         </label>
@@ -779,7 +779,7 @@
 
                                 <!-- -------------- step 3 -------------- -->
                                 <h4 class="wizard-section-title">
-                                    <i class="fa fa-file-text pr5"></i> Banking Details</h4>
+                                    <i class="fa fa-file-text pr5"></i> Akun Kartu</h4>
                                 <section class="wizard-section">
 
 
@@ -787,7 +787,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Bank Account Number </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Nomor Rekening </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="account_number" id="bank_account_number"
@@ -808,7 +808,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Bank Name </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Nama Bank </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="bank_name" id="bank_name" class="gui-input"
@@ -828,7 +828,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> IFSC Code </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Kode Bank </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="ifsc_code" id="ifsc_code" class="gui-input"
@@ -848,7 +848,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> PF Account Number </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Nomor BPJS Ketenagakerjaan </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="pf_account_number" id="pf_account_number"
@@ -869,7 +869,7 @@
                                     </div>
 
                                    <div class="section">
-                                       <label for="input002"><h6 class="mb20 mt40"> UN Number</h6></label>
+                                       <label for="input002"><h6 class="mb20 mt40"> Nomor BPJS Kesehatan</h6></label>
                                        <label for="input002" class="field prepend-icon">
                                            @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                               <input type="text" name="un_number" id="un_number" class="gui-input"
@@ -888,7 +888,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> PF Status </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Status BPJS </h6></label>
 
                                         <div class="option-group field">
                                             <label class="field option mb5">
@@ -907,13 +907,13 @@
 
 
                                 <h4 class="wizard-section-title">
-                                    <i class="fa fa-file-text pr5"></i> Ex Employment Details </h4>
+                                    <i class="fa fa-file-text pr5"></i> Detail Pegawai </h4>
                                 <section class="wizard-section">
 
 
                                     <div class="section">
                                         <label for="datepicker6" class="field prepend-icon mb5"><h6 class="mb20 mt40">
-                                                Date of Resignation </h6></label>
+                                                Tanggal Registrasi </h6></label>
 
                                         <div class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
@@ -933,7 +933,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Notice Period </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Priode Pemberitahuan </h6></label>
                                             <select class="select2-single form-control" name="notice_period" id="notice_period">
                                                 <option value="">Select notice period</option>
                                                 @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
@@ -954,7 +954,7 @@
 
                                     <div class="section">
                                         <label for="datepicker7" class="field prepend-icon mb5"><h6 class="mb20 mt40">
-                                                Last Working Day </h6></label>
+                                                Tanggal Masuk </h6></label>
 
                                         <div class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')

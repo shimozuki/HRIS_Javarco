@@ -80,7 +80,7 @@
                                 <table class="table allcp-form theme-warning tc-checkbox-1 fs13">
                                     <thead>
                                     <tr class="bg-light">
-                                        <th class="text-center">Id</th>
+                                        <th class="text-center">NO</th>
                                         <th class="text-center">Code</th>
                                         <th class="text-center">Name</th>
                                         <th class="text-center">Status</th>
