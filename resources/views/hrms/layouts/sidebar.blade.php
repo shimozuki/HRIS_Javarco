@@ -47,7 +47,7 @@
             </ul>
         </li>
 
-        @if(\Auth::user()->isAdmin || \Auth::user()->isHR() || \Auth::user()->isManager())
+        @if(\Auth::user()->isAdmin || \Auth::user()->isManager())
             <li>
                 <a class="accordion-toggle" href="/dashboard">
                     <span class="fa fa-user"></span>
@@ -67,7 +67,7 @@
                 </ul>
             </li>
         @endif
-
+        @if(\Auth::user()->isAdmin || \Auth::user()->isManager())
         <li>
             <a class="accordion-toggle" href="/dashboard">
                 <span class="fa fa-user"></span>
@@ -96,7 +96,7 @@
                 </li>
             </ul>
         </li>
-
+        
         <li>
 
             <a href="/bank-account-details">
@@ -105,7 +105,7 @@
 
             </a>
         </li>
-
+        
         <li>
             <a class="accordion-toggle" href="/dashboard">
                 <span class="fa fa-group"></span>
@@ -141,6 +141,7 @@
                 </li>
             </ul>
         </li>
+        @endif
         <li>
             <a class="accordion-toggle" href="/dashboard">
                 <span class="fa fa fa-gas-pump"></span>
