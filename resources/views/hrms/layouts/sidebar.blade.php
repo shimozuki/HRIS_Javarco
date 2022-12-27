@@ -83,7 +83,7 @@
         </ul>
     </li>
 
-    @if(\Auth::user()->isAdmin || \Auth::user()->isHR() || \Auth::user()->isManager())
+    @if(\Auth::user()->isAdmin || \Auth::user()->isHR() || \Auth::user()->isAgen())
     <li>
         <a class="accordion-toggle" href="/dashboard">
             <span class="fa fa-user"></span>
