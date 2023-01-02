@@ -146,8 +146,8 @@
       $leave->user_id = \Auth::user()->id;
       $leave->date_from = date_format(date_create($request->dateFrom), 'Y-m-d');
       $leave->date_to = date_format(date_create($request->dateTo), 'Y-m-d');
-      $leave->from_time = $request->time_from;
-      $leave->to_time = $request->time_to;
+      $leave->from_time = date('h:i:s');
+      $leave->to_time = date('h:i:s');
       $leave->reason = $request->reason;
       $leave->days = $number_of_days;
       $leave->status = '0';

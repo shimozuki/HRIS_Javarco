@@ -24,7 +24,7 @@
             <span class="sidebar-title">Dashboard</span>
         </a>
     </li>
-    @if(Auth::user()->isHR() || \Auth::isManager())
+    @if(Auth::user()->isHR() || \Auth::user()->isManager())
     <li>
         <a class="accordion-toggle" href="/dashboard">
             <span class="fa fa-group"></span>
@@ -106,7 +106,7 @@
         </ul>
     </li>
     @endif
-    @if(\Auth::user()->iskeuangan() || \Auth::isManager())
+    @if(\Auth::user()->iskeuangan() || \Auth::user()->isManager())
     <li>
         <a href="/bank-account-details">
             <span class="fa fa-bank"></span>
@@ -115,7 +115,7 @@
         </a>
     </li>
     @endif
-    @if(\Auth::user()->isgudang() || \Auth::isManager())
+    @if(\Auth::user()->isgudang() || \Auth::user()->isManager())
     <li>
         <a class="accordion-toggle" href="/dashboard">
             <span class="fa fa fa-gas-pump"></span>
@@ -142,7 +142,7 @@
         </ul>
     </li>
     @endif
-    @if(Auth::user()->isSdm() || \Auth::isManager())
+    @if(Auth::user()->isSdm() || \Auth::user()->isManager())
     <li>
         <a class="accordion-toggle" href="/dashboard">
             <span class="fa fa-user"></span>
@@ -297,7 +297,7 @@
         </a>
     </li>
     @endif
-    @if(\Auth::user()->isAgen() || \Auth::isManager())
+    @if(\Auth::user()->isAgen() || \Auth::user()->isManager())
     <li>
         <a href="{{route('list-client')}}">
             <span class="fa fa-user"></span>

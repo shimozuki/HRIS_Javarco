@@ -17,9 +17,9 @@
                         <a href="/dashboard"> Dashboard </a>
                     </li>
                     <li class="breadcrumb-link">
-                        <a href=""> Leave </a>
+                        <a href=""> Jenis Cuti </a>
                     </li>
-                    <li class="breadcrumb-current-item"> Edit {{$result->leave_type}} leave type</li>
+                    <li class="breadcrumb-current-item"> Edit {{$result->leave_type}} Jenis Cuti</li>
                 </ol>
             @else
             <ol class="breadcrumb">
@@ -32,9 +32,9 @@
                     <a href="/dashboard"> Dashboard </a>
                 </li>
                 <li class="breadcrumb-link">
-                    <a href=""> Leave </a>
+                    <a href=""> Cuti </a>
                 </li>
-                <li class="breadcrumb-current-item"> Add Leave Type </li>
+                <li class="breadcrumb-current-item"> Tambah Jenis Cuti </li>
             </ol>
             @endif
         </div>
@@ -49,9 +49,9 @@
                     <div class="panel">
                         <div class="panel-heading">
                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-leave-type/{id}')
-                                <span class="panel-title hidden-xs"> Edit Leave Type </span>
+                                <span class="panel-title hidden-xs"> Edit Jenis Cuti </span>
                                 @else
-                                <span class="panel-title hidden-xs"> Add Leave Type </span>
+                                <span class="panel-title hidden-xs"> Add Jenis Cuti </span>
                                 @endif
                         </div>
 
@@ -68,7 +68,7 @@
                                     {!! Form::open(['class' => 'form-horizontal']) !!}
 
                                         <div class="form-group">
-                                            <label class="col-md-3 control-label"> Leave Type </label>
+                                            <label class="col-md-3 control-label"> Jenis Cuti </label>
                                             <div class="col-md-6">
                                                 @if(\Route::getFacadeRoot()->current()->uri() == 'edit-leave-type/{id}')
                                                     <input type="text" name="leave_type" id="input002" class="select2-single form-control" value="@if($result && $result->leave_type){{$result->leave_type}}@endif" required>
@@ -79,7 +79,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="col-md-3 control-label"> Description </label>
+                                            <label class="col-md-3 control-label"> Deskripsi </label>
                                             <div class="col-md-6">
                                                 @if(\Route::getFacadeRoot()->current()->uri() == 'edit-leave-type/{id}')
                                                     <textarea class="select2-single form-control" rows="3" id="textarea1" placeholder="Leave Description" name="description" required>@if($result && $result->description){{$result->description}}@endif</textarea>
