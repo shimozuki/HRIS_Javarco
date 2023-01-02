@@ -80,7 +80,7 @@ class User extends Authenticatable
     {
         $userId = Auth::user()->id;
         $userRole = UserRole::where('user_id', $userId)->first();
-        if($userRole->role_id == 16)
+        if($userRole->role_id == 18)
         {
             return true;
         }

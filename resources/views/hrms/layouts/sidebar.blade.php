@@ -24,7 +24,7 @@
             <span class="sidebar-title">Dashboard</span>
         </a>
     </li>
-    @if(Auth::user()->isHR())
+    @if(Auth::user()->isHR() || \Auth::isManager())
     <li>
         <a class="accordion-toggle" href="/dashboard">
             <span class="fa fa-group"></span>
@@ -106,7 +106,7 @@
         </ul>
     </li>
     @endif
-    @if(\Auth::user()->iskeuangan())
+    @if(\Auth::user()->iskeuangan() || \Auth::isManager())
     <li>
         <a href="/bank-account-details">
             <span class="fa fa-bank"></span>
@@ -115,7 +115,7 @@
         </a>
     </li>
     @endif
-    @if(\Auth::user()->isgudang())
+    @if(\Auth::user()->isgudang() || \Auth::isManager())
     <li>
         <a class="accordion-toggle" href="/dashboard">
             <span class="fa fa fa-gas-pump"></span>
@@ -142,7 +142,7 @@
         </ul>
     </li>
     @endif
-    @if(Auth::user()->isSdm())
+    @if(Auth::user()->isSdm() || \Auth::isManager())
     <li>
         <a class="accordion-toggle" href="/dashboard">
             <span class="fa fa-user"></span>
@@ -297,12 +297,11 @@
         </a>
     </li>
     @endif
-    @if(\Auth::user()->isAgen())
+    @if(\Auth::user()->isAgen() || \Auth::isManager())
     <li>
-        <a class="accordion-toggle" href="{{route('list-client')}}">
+        <a href="{{route('list-client')}}">
             <span class="fa fa-user"></span>
-            <span class="sidebar-title">Agen</span>
-            <span class="caret"></span>
+            <span class="sidebar-title"> Agen </span>
         </a>
     </li>
     @endif
