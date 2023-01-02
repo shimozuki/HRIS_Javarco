@@ -17,9 +17,9 @@
                             <a href="/dashboard"> Dashboard </a>
                         </li>
                         <li class="breadcrumb-link">
-                            <a href=""> Expenses </a>
+                            <a href=""> Gaji </a>
                         </li>
-                        <li class="breadcrumb-current-item"> Edit Expenses </li>
+                        <li class="breadcrumb-current-item"> Edit Gaji </li>
                     </ol>
             </div>
         </header>
@@ -32,7 +32,7 @@
                         <div class="box box-success">
                         <div class="panel">
                             <div class="panel-heading">
-                                    <span class="panel-title hidden-xs"> Edit Expenses </span>
+                                    <span class="panel-title hidden-xs"> Edit Gaji </span>
                             </div>
 
                             <div class="panel-body pn">
@@ -46,7 +46,7 @@
                                         {!! Form::open(['class' => 'form-horizontal']) !!}
 
                                         <div class="form-group">
-                                            <label class="col-md-3 control-label"> Select Employee </label>
+                                            <label class="col-md-3 control-label"> Select Karyawan </label>
                                             <div class="col-md-6">
                                                 <select class="select2-multiple form-control select-primary"
                                                         name="emp_id" required>
@@ -62,21 +62,7 @@
                                         </div>
 
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Item </label>
-                                                <div class="col-md-6">
-                                                    <input type="text" name="item" id="input002" class=" form-control" value="@if($expenses){{$expenses->item}}@endif" required>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label class="col-md-3 control-label"> Purchase From</label>
-                                                <div class="col-md-6">
-                                                    <input type="text" name="purchase_from" id="input002" class=" form-control" value="@if($expenses){{$expenses->purchase_from}}@endif" required>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="datepicker1" class="col-md-3 control-label"> Date of Purchase </label>
+                                                <label for="datepicker1" class="col-md-3 control-label"> Tanggal Gajian </label>
                                                 <div class="col-md-6">
                                                     <div class="input-group">
                                                         <div class="input-group-addon">
@@ -89,7 +75,7 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Amount </label>
+                                                <label class="col-md-3 control-label"> Jumlah Gaji </label>
                                                 <div class="col-md-6">
                                                     <input type="text" name="amount" id="input002" class=" form-control" value="@if($expenses){{$expenses->amount}}@endif" required>
                                                 </div>

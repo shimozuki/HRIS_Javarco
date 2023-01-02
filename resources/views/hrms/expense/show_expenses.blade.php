@@ -49,12 +49,10 @@
                                     <table class="table allcp-form theme-warning tc-checkbox-1 fs13">
                                         <thead>
                                         <tr class="bg-light">
-                                            <th class="text-center">Id</th>
-                                            <th class="text-center">Employee</th>
-                                            <th class="text-center">Item</th>
-                                            <th class="text-center">Purchase From</th>
-                                            <th class="text-center">Date of Purchase</th>
-                                            <th class="text-center">Amount</th>
+                                            <th class="text-center">No</th>
+                                            <th class="text-center">Pegawai</th>
+                                            <th class="text-center">Tanggal Gajian</th>
+                                            <th class="text-center">Jumlah Gaji</th>
                                             <th class="text-center">Actions</th>
                                         </tr>
                                         </thead>
@@ -64,8 +62,6 @@
                                             <tr>
                                                 <td class="text-center">{{$i+=1}}</td>
                                                 <td class="text-center">{{$expense->employee->name}}</td>
-                                                <td class="text-center">{{$expense->item}}</td>
-                                                <td class="text-center">{{$expense->purchase_from}}</td>
                                                 <td class="text-center">{{getFormattedDate($expense->date_of_purchase)}}</td>
                                                 <td class="text-center">{{$expense->amount}}</td>
                                                 <td class="text-center">

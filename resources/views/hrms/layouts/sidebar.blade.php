@@ -299,22 +299,11 @@
     @endif
     @if(\Auth::user()->isAgen())
     <li>
-        <a class="accordion-toggle" href="/dashboard">
+        <a class="accordion-toggle" href="{{route('list-client')}}">
             <span class="fa fa-user"></span>
             <span class="sidebar-title">Agen</span>
             <span class="caret"></span>
         </a>
-        <ul class="nav sub-nav">
-            <li>
-                <a href="{{route('add-client')}}">
-                    <span class="glyphicon glyphicon-tags"></span> Tambah Agen </a>
-            </li>
-
-            <li>
-                <a href="{{route('list-client')}}">
-                    <span class="glyphicon glyphicon-tags"></span> Data Agen </a>
-            </li>
-        </ul>
     </li>
     @endif
     <p> &nbsp; </p>
