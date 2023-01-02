@@ -52,7 +52,7 @@
                                         <th class="text-center">No</th>
                                         <th class="text-center">Nama Team</th>
                                         <th class="text-center">Manager</th>
-                                        <th class="text-center">Owner</th>
+                                        <th class="text-center">Bendahara</th>
                                         <th class="text-center">Pegawai</th>
                                         <th class="text-center">Action</th>
                                     </tr>
