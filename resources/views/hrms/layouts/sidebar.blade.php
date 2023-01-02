@@ -87,6 +87,24 @@
             </li>
         </ul>
     </li>
+    <li>
+        <a class="accordion-toggle" href="/dashboard">
+            <span class="fa fa-user"></span>
+            <span class="sidebar-title">Agen</span>
+            <span class="caret"></span>
+        </a>
+        <ul class="nav sub-nav">
+            <li>
+                <a href="{{route('add-client')}}">
+                    <span class="glyphicon glyphicon-tags"></span> Tambah Agen </a>
+            </li>
+
+            <li>
+                <a href="{{route('list-client')}}">
+                    <span class="glyphicon glyphicon-tags"></span> Data Agen </a>
+            </li>
+        </ul>
+    </li>
     @endif
     @if(\Auth::user()->iskeuangan())
     <li>
@@ -178,7 +196,6 @@
                 <a href="{{route('my-leave-list')}}">
                     <span class="glyphicon glyphicon-calendar"></span> Data Karyawan Cuti </a>
             </li>
-            @endif
             <li>
                 <a href="{{route('add-leave-type')}}">
                     <span class="fa fa-desktop"></span> Alasan Cuti </a>
@@ -280,7 +297,7 @@
         </a>
     </li>
     @endif
-    @if(\Auth::user()->isHR() || \Auth::user()->isAgen())
+    @if(\Auth::user()->isAgen())
     <li>
         <a class="accordion-toggle" href="/dashboard">
             <span class="fa fa-user"></span>
