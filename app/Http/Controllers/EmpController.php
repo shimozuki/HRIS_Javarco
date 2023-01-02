@@ -568,7 +568,11 @@ class EmpController extends Controller
 
     public function doPromotion()
     {
-        $emps  = User::get();
+        $emps  = Employee::join('users', 'employees.id', '=', 'users.id')->join('user_roles', 'users.id', '=', 'user_roles.user_id')
+        ->join('roles', 'user_roles.role_id', '=', 'roles.id')->select('employees.name', 'roles.name AS jabatan', 'employees.salary', 'employees.id')->get();
+        // echo "<pre>";
+        // print_r($emps);
+        // echo "</pre>";
         $roles = Role::get();
 
         return view('hrms.promotion.add_promotion', compact('emps', 'roles'));
@@ -597,11 +601,14 @@ class EmpController extends Controller
         $promotion                    = new Promotion();
         $promotion->emp_id            = $request->emp_id;
         $promotion->old_designation   = $request->old_designation;
-        $promotion->new_designation   = $newDesignation->name;
+        $promotion->new_designation   = $request->new_designation;
         $promotion->old_salary        = $request->old_salary;
         $promotion->new_salary        = $request->new_salary;
         $promotion->date_of_promotion = date_format(date_create($request->date_of_promotion), 'Y-m-d');
         $promotion->save();
+        // echo "<pre>";
+        // print_r($promotion);
+        // echo "</pre>";
 
         \Session::flash('flash_message', 'Employee successfully Promoted!');
 
