@@ -88,7 +88,7 @@
                                     </div>
 
 
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label for="time_from" class=" col-md-2 control-label  "> Time From </label>
                                         <div class="col-md-3">
                                             <div class="input-group">
@@ -98,8 +98,8 @@
                                                 <input type="text" id="timepicker1" class="select2-single form-control" value="9:30"
                                                        name="time_from" required>
                                             </div>
-                                        </div>
-                                        <label for="time_to" class="col-md-2 control-label"> Time To </label>
+                                        </div> -->
+                                        <!-- <label for="time_to" class="col-md-2 control-label"> Time To </label>
                                         <div class="col-md-3">
                                             <div class="input-group">
                                                 <div class="input-group-addon">
@@ -109,7 +109,7 @@
                                                        name="time_to" required>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="form-group">
                                         <label for="input002" class="col-md-2 control-label"> Days </label>
                                         <div class="col-md-10">

@@ -198,12 +198,6 @@
                     <span class="fa fa-clipboard"></span> Data Alasan Cuti </a>
             </li>
             @endif
-            @if(Auth::user()->isHR() || Auth::user()->isCoordinator())
-            <li>
-                <a href="{{route('total-leave-list')}}">
-                    <span class="fa fa-clipboard"></span> Total Cuti </a>
-            </li>
-            @endif
         </ul>
     </li>
 
