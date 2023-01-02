@@ -40,7 +40,7 @@
                             <div class="col-xs-5 ph10">
                                 <img src="/assets/img/pages/user.png" class="img-responsive mauto" alt=""/></div>
                             <div class="col-xs-7 pl5">
-                                <h3 class="text-muted"><a href="{{route('employee-manager')}}"> Pegawai</a></h3>
+                                <h3 class="text-muted"><a href="{{route('employee-manager')}}"> Karyawan</a></h3>
                                 {{--<h2 class="fs50 mt5 mbn">385</h2>--}}
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                             <div class="col-xs-5 ph10"><img src="/assets/img/pages/to-do-list.png"
                                                             class="img-responsive mauto" alt=""/></div>
                             <div class="col-xs-7 pl5">
-                                <h3 class="text-muted"> <a href="{{route('total-leave-list')}}"> Pegawai <br/> Cuti </a></h3>
+                                <h3 class="text-muted"> <a href="{{route('total-leave-list')}}"> Karyawan <br/> Cuti </a></h3>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                                 <div class="col-xs-5 ph10"><img src="/assets/img/pages/wallet.png"
                                                                 class="img-responsive mauto" style="height: 100px; width: 100px;" alt=""/></div>
                                 <div class="col-xs-7 pl5">
-                                    <h3 class="text-muted"> <a href="{{route('expense-list')}}"> Gaji <br /> Pegawai </a></h3>
+                                    <h3 class="text-muted"> <a href="{{route('expense-list')}}"> Gaji <br /> Karyawan </a></h3>
                                 </div>
                             </div>
                         </div>
