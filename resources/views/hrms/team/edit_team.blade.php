@@ -73,7 +73,7 @@
 
 
                                         <div class="form-group">
-                                            <label class="col-md-3 control-label"> Pilih Owner Team</label>
+                                            <label class="col-md-3 control-label"> Pilih Keuangan</label>
                                             <div class="col-md-6">
                                                 <select class="selectpicker form-control" data-done-button="true"
                                                         name="leader_id" required>
@@ -99,7 +99,7 @@
                                                         @if(in_array($emp->id,$team_member))
                                                             <option value="{{$emp->id}}" selected>{{$emp->name}}</option>
                                                         @else
-                                                            <option value="{{$emp->id}}">{{$emp->name}}</option>
+                                                            <option value="{{$emp->id}}">{{$pegawai->name}}</option>
                                                         @endif
                                                     @endforeach
                                                 </select>

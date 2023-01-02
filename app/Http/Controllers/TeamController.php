@@ -13,15 +13,16 @@ class TeamController extends Controller
 {
     public function addTeam()
     {
-        $emps = User::get();
+        $emps = User::whereHas('role', function ($q) {
+            $q->where('role_id', '!=', '3')->where('role_id', '!=', '18');
+        })->get();
         $managers = User::whereHas('role', function ($q) {
-            $q->where('role_id', '16');
+            $q->where('role_id', '18');
         })->get();
 
         $leaders = User::whereHas('role', function ($q) {
-            $q->where('role_id', '5');
+            $q->where('role_id', '3');
         })->get();
-
         return view('hrms.team.add_team', compact('emps', 'managers', 'leaders'));
     }
 
@@ -56,14 +57,20 @@ class TeamController extends Controller
     public function showEdit($id)
     {
         $managers = User::whereHas('role', function ($q) {
-            $q->where('role_id', '16');
+            $q->where('role_id', '18');
         })->get();
 
         $leaders = User::whereHas('role', function ($q) {
-            $q->where('role_id', '5');
+            $q->where('role_id', '3');
         })->get();
 
-        $emps = User::get();
+        $pegawai = User::whereHas('role', function ($q) {
+            $q->where('role_id', '!=', '3')->where('role_id', '!=', '18');
+        })->get();
+
+        $emps = User::whereHas('role', function ($q) {
+            $q->where('role_id', '!=', '3')->where('role_id', '!=', '18');
+        })->get();
 
         $edit = Team::with(['manager', 'leader', 'employee'])->where('team_id', $id)->get();
 
