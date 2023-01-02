@@ -31,6 +31,7 @@ class AssetController extends Controller
         $asset = new Asset;
         $asset->name = $request->name;
         $asset->description = $request->description;
+        $asset->jumlah = $request->jumlah;
         $asset->save();
         \Session::flash('flash_message', 'Asset successfully added!');
         return redirect()->back();
@@ -65,6 +66,7 @@ class AssetController extends Controller
     {
         $name = $request->name;
         $description = $request->description;
+        $jumlah = $request->jumlah;
 
         $edit = Asset::findOrFail($id);
         if (!empty($name)) {
@@ -72,6 +74,9 @@ class AssetController extends Controller
         }
         if (!empty($description)) {
             $edit->description = $description;
+        }
+        if (!empty($description)) {
+            $edit->jumlah = $description;
         }
         $edit->save();
         \Session::flash('flash_message', 'Asset successfully updated!');

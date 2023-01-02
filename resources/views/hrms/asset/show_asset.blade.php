@@ -16,9 +16,9 @@
                     <a href="/dashboard"> Dashboard </a>
                 </li>
                 <li class="breadcrumb-link">
-                    <a href=""> Assets </a>
+                    <a href=""> Produk </a>
                 </li>
-                <li class="breadcrumb-current-item"> Asset Listings </li>
+                <li class="breadcrumb-current-item"> List Produk </li>
             </ol>
         </div>
     </header>
@@ -36,7 +36,7 @@
                     <div class="box box-success">
                     <div class="panel">
                         <div class="panel-heading">
-                            <span class="panel-title hidden-xs"> Asset Lists </span>
+                            <span class="panel-title hidden-xs"> List Produk </span>
                         </div>
                         <div class="panel-body pn">
 
@@ -50,9 +50,10 @@
                                 <table class="table allcp-form theme-warning tc-checkbox-1 fs13">
                                     <thead>
                                     <tr class="bg-light">
-                                        <th class="text-center">Id</th>
-                                        <th class="text-center">Asset</th>
-                                        <th class="text-center">Description</th>
+                                        <th class="text-center">No</th>
+                                        <th class="text-center">Produk</th>
+                                        <th class="text-center">Stok</th>
+                                        <th class="text-center">Deskripsi</th>
                                         <th class="text-center">Actions</th>
                                 </tr>
                                 </thead>
@@ -63,6 +64,7 @@
                                         <td class="text-center">{{$i+=1}}</td>
 
                                         <td class="text-center">{{$asset->name}}</td>
+                                        <td class="text-center">{{$asset->Jumlah}}</td>
                                         <td class="text-center">{{$asset->description}}</td>
                                         <td class="text-center">
                                             <div class="btn-group text-right">
