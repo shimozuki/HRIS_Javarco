@@ -24,7 +24,71 @@
             <span class="sidebar-title">Dashboard</span>
         </a>
     </li>
-    @if(\Auth::user()->iskeuangan() || \Auth::user()->isHR())
+    @if(Auth::user()->isHR())
+    <li>
+        <a class="accordion-toggle" href="/dashboard">
+            <span class="fa fa-group"></span>
+            <span class="sidebar-title">Team</span>
+            <span class="caret"></span>
+        </a>
+        <ul class="nav sub-nav">
+            <li>
+                <a href="{{route('add-team')}}">
+                    <span class="glyphicon glyphicon-book"></span> Tambah Team </a>
+            </li>
+            <li>
+                <a href="{{route('team-listing')}}">
+                    <span class="glyphicon glyphicon-modal-window"></span> Data Team </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a class="accordion-toggle" href="/dashboard">
+            <span class="fa fa-user"></span>
+            <span class="sidebar-title">Proyek</span>
+            <span class="caret"></span>
+        </a>
+        <ul class="nav sub-nav">
+            <li>
+                <a href="{{route('add-project')}}">
+                    <span class="glyphicon glyphicon-tags"></span> Tambah Proyek </a>
+            </li>
+
+            <li>
+                <a href="{{route('list-project')}}">
+                    <span class="glyphicon glyphicon-tags"></span> Data Proyek</a>
+            </li>
+
+            <li>
+                <a href="{{route('assign-project')}}">
+                    <span class="glyphicon glyphicon-tags"></span> Pilih Karyawan</a>
+            </li>
+
+            <li>
+                <a href="{{route('project-assignment-listing')}}">
+                    <span class="glyphicon glyphicon-tags"></span> List Karyawan Proyek</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a class="accordion-toggle" href="/dashboard">
+            <span class="fa fa-graduation-cap"></span>
+            <span class="sidebar-title">Divisi</span>
+            <span class="caret"></span>
+        </a>
+        <ul class="nav sub-nav">
+            <li>
+                <a href="{{route('add-role')}}">
+                    <span class="glyphicon glyphicon-book"></span> Tambah Divisi </a>
+            </li>
+            <li>
+                <a href="{{route('role-list')}}">
+                    <span class="glyphicon glyphicon-modal-window"></span> Data Divisi </a>
+            </li>
+        </ul>
+    </li>
+    @endif
+    @if(\Auth::user()->iskeuangan())
     <li>
         <a href="/bank-account-details">
             <span class="fa fa-bank"></span>
@@ -60,21 +124,21 @@
         </ul>
     </li>
     @endif
-    @if(Auth::user()->isHR())
+    @if(Auth::user()->isSdm())
     <li>
         <a class="accordion-toggle" href="/dashboard">
             <span class="fa fa-user"></span>
-            <span class="sidebar-title">Pegawai</span>
+            <span class="sidebar-title">Karyawan</span>
             <span class="caret"></span>
         </a>
         <ul class="nav sub-nav">
             <li>
                 <a href="{{route('add-employee')}}">
-                    <span class="glyphicon glyphicon-tags"></span> Tambah Pegawai </a>
+                    <span class="glyphicon glyphicon-tags"></span> Tambah Karyawan </a>
             </li>
             <li>
                 <a href="{{route('employee-manager')}}">
-                    <span class="glyphicon glyphicon-tags"></span> Data Pegawai </a>
+                    <span class="glyphicon glyphicon-tags"></span> Data Karyawan </a>
             </li>
             <!-- <li>
                     <a href="{{route('upload-emp')}}">
@@ -82,144 +146,6 @@
                 </li> -->
         </ul>
     </li>
-
-    @if(\Auth::user()->isAdmin || \Auth::user()->isHR() || \Auth::user()->isAgen())
-    <li>
-        <a class="accordion-toggle" href="/dashboard">
-            <span class="fa fa-user"></span>
-            <span class="sidebar-title">Agen</span>
-            <span class="caret"></span>
-        </a>
-        <ul class="nav sub-nav">
-            <li>
-                <a href="{{route('add-client')}}">
-                    <span class="glyphicon glyphicon-tags"></span> Tambah Agen </a>
-            </li>
-
-            <li>
-                <a href="{{route('list-client')}}">
-                    <span class="glyphicon glyphicon-tags"></span> Data Agen </a>
-            </li>
-        </ul>
-    </li>
-    @endif
-
-    <li>
-        <a class="accordion-toggle" href="/dashboard">
-            <span class="fa fa-user"></span>
-            <span class="sidebar-title">Proyek</span>
-            <span class="caret"></span>
-        </a>
-        <ul class="nav sub-nav">
-            <li>
-                <a href="{{route('add-project')}}">
-                    <span class="glyphicon glyphicon-tags"></span> Tambah Proyek </a>
-            </li>
-
-            <li>
-                <a href="{{route('list-project')}}">
-                    <span class="glyphicon glyphicon-tags"></span> Data Proyek</a>
-            </li>
-
-            <li>
-                <a href="{{route('assign-project')}}">
-                    <span class="glyphicon glyphicon-tags"></span> Pilih Pegawai</a>
-            </li>
-
-            <li>
-                <a href="{{route('project-assignment-listing')}}">
-                    <span class="glyphicon glyphicon-tags"></span> List Pegawai Proyek</a>
-            </li>
-        </ul>
-    </li>
-
-    <li>
-        <a class="accordion-toggle" href="/dashboard">
-            <span class="fa fa-group"></span>
-            <span class="sidebar-title">Team</span>
-            <span class="caret"></span>
-        </a>
-        <ul class="nav sub-nav">
-            <li>
-                <a href="{{route('add-team')}}">
-                    <span class="glyphicon glyphicon-book"></span> Tambah Team </a>
-            </li>
-            <li>
-                <a href="{{route('team-listing')}}">
-                    <span class="glyphicon glyphicon-modal-window"></span> Data Team </a>
-            </li>
-        </ul>
-    </li>
-
-    <li>
-        <a class="accordion-toggle" href="/dashboard">
-            <span class="fa fa-graduation-cap"></span>
-            <span class="sidebar-title">Divisi</span>
-            <span class="caret"></span>
-        </a>
-        <ul class="nav sub-nav">
-            <li>
-                <a href="{{route('add-role')}}">
-                    <span class="glyphicon glyphicon-book"></span> Tambah Divisi </a>
-            </li>
-            <li>
-                <a href="{{route('role-list')}}">
-                    <span class="glyphicon glyphicon-modal-window"></span> Data Divisi </a>
-            </li>
-        </ul>
-    </li>
-  
-    @endif
-    @if(\Auth::user()->isHR())
-    <li>
-        <a class="accordion-toggle" href="/dashboard">
-            <span class="fa fa-envelope"></span>
-            <span class="sidebar-title">Pegawai Cuti</span>
-            <span class="caret"></span>
-        </a>
-        <ul class="nav sub-nav">
-            <li>
-                <a href="{{route('apply-leave')}}">
-                    <span class="glyphicon glyphicon-shopping-cart"></span> Tambah Cuti </a>
-            </li>
-            <li>
-                <a href="{{route('my-leave-list')}}">
-                    <span class="glyphicon glyphicon-calendar"></span> Data Pegawai Cuti </a>
-            </li>
-            @endif
-
-            @if(\Auth::user()->isHR())
-            <li>
-                <a href="{{route('add-leave-type')}}">
-                    <span class="fa fa-desktop"></span> Alasan Cuti </a>
-            </li>
-            <li>
-                <a href="{{route('leave-type-listing')}}">
-                    <span class="fa fa-clipboard"></span> Data Alasan Cuti </a>
-            </li>
-            @endif
-        </ul>
-    </li>
-
-    @if(Auth::user()->isHR())
-    <li>
-        <a class="accordion-toggle" href="/dashboard">
-            <span class="fas fa-arrow-circle-up"></span>
-            <span class="sidebar-title">Kenaikan Jabatan</span>
-            <span class="caret"></span>
-        </a>
-        <ul class="nav sub-nav">
-            <li>
-                <a href="/promotion">
-                    <span class="glyphicon glyphicon-book"></span> Promosi jabatan </a>
-            </li>
-            <li>
-                <a href="/show-promotion">
-                    <span class="glyphicon glyphicon-modal-window"></span> Jabatan </a>
-            </li>
-        </ul>
-    </li>
-
     <li>
         <a class="accordion-toggle" href="/dashboard">
             <span class="fa fa-money"></span>
@@ -237,41 +163,49 @@
             </li>
         </ul>
     </li>
-    @endif
-
-    @if(\Auth::user()->isHR())
     <li>
-        <a class="accordion-toggle" href="#">
-            <span class="fa fa fa-gavel"></span>
-            <span class="sidebar-title">Magang</span>
+        <a class="accordion-toggle" href="/dashboard">
+            <span class="fa fa-envelope"></span>
+            <span class="sidebar-title">Karyawan Cuti</span>
             <span class="caret"></span>
         </a>
         <ul class="nav sub-nav">
-
             <li>
-                <a href="/add-training-program">
-                    <span class="fa fa-adn"></span> Tambah Program Magang </a>
+                <a href="{{route('apply-leave')}}">
+                    <span class="glyphicon glyphicon-shopping-cart"></span> Tambah Cuti </a>
             </li>
-
             <li>
-                <a href="/show-training-program">
-                    <span class="glyphicon glyphicon-calendar"></span> Data Program Magang </a>
-            </li>
-
-            @if(\Auth::user()->notAnalyst())
-            <li>
-                <a href="/add-training-invite">
-                    <span class="fa fa-desktop"></span> Tambah Pegawai Magang </a>
+                <a href="{{route('my-leave-list')}}">
+                    <span class="glyphicon glyphicon-calendar"></span> Data Karyawan Cuti </a>
             </li>
             @endif
             <li>
-                <a href="/show-training-invite">
-                    <span class="fa fa-clipboard"></span> Data Pegawai Magang </a>
+                <a href="{{route('add-leave-type')}}">
+                    <span class="fa fa-desktop"></span> Alasan Cuti </a>
+            </li>
+            <li>
+                <a href="{{route('leave-type-listing')}}">
+                    <span class="fa fa-clipboard"></span> Data Alasan Cuti </a>
             </li>
         </ul>
     </li>
-    @endif
-    @if(Auth::user()->isHR())
+    <li>
+        <a class="accordion-toggle" href="/dashboard">
+            <span class="fas fa-arrow-circle-up"></span>
+            <span class="sidebar-title">Kenaikan Jabatan</span>
+            <span class="caret"></span>
+        </a>
+        <ul class="nav sub-nav">
+            <li>
+                <a href="/promotion">
+                    <span class="glyphicon glyphicon-book"></span> Promosi jabatan </a>
+            </li>
+            <li>
+                <a href="/show-promotion">
+                    <span class="glyphicon glyphicon-modal-window"></span> Jabatan </a>
+            </li>
+        </ul>
+    </li>
     <li>
         <a class="accordion-toggle" href="#">
             <span class="fa fa-clock-o"></span>
@@ -304,10 +238,33 @@
             </li>
         </ul>
     </li>
+    <li>
+        <a class="accordion-toggle" href="#">
+            <span class="fa fa fa-gavel"></span>
+            <span class="sidebar-title">Magang</span>
+            <span class="caret"></span>
+        </a>
+        <ul class="nav sub-nav">
 
-    @endif
-    @if(Auth::user()->isCoordinator() || Auth::user()->isHR())
-    {{--<li class="sidebar-label pt30"> Extras</li>--}}
+            <li>
+                <a href="/add-training-program">
+                    <span class="fa fa-adn"></span> Tambah Program Magang </a>
+            </li>
+
+            <li>
+                <a href="/show-training-program">
+                    <span class="glyphicon glyphicon-calendar"></span> Data Program Magang </a>
+            </li>
+            <li>
+                <a href="/add-training-invite">
+                    <span class="fa fa-desktop"></span> Tambah Karyawan Magang </a>
+            </li>
+            <li>
+                <a href="/show-training-invite">
+                    <span class="fa fa-clipboard"></span> Data Karyawan Magang </a>
+            </li>
+        </ul>
+    </li>
     <li>
         <a href="/create-meeting">
             <span class="fa fa-calendar-o"></span>
@@ -323,7 +280,26 @@
         </a>
     </li>
     @endif
+    @if(\Auth::user()->isHR() || \Auth::user()->isAgen())
+    <li>
+        <a class="accordion-toggle" href="/dashboard">
+            <span class="fa fa-user"></span>
+            <span class="sidebar-title">Agen</span>
+            <span class="caret"></span>
+        </a>
+        <ul class="nav sub-nav">
+            <li>
+                <a href="{{route('add-client')}}">
+                    <span class="glyphicon glyphicon-tags"></span> Tambah Agen </a>
+            </li>
 
+            <li>
+                <a href="{{route('list-client')}}">
+                    <span class="glyphicon glyphicon-tags"></span> Data Agen </a>
+            </li>
+        </ul>
+    </li>
+    @endif
     <p> &nbsp; </p>
 </ul>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>

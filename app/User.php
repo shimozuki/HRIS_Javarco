@@ -116,6 +116,16 @@ class User extends Authenticatable
         }
         return false;
     }
+    public function isSdm()
+    {
+        $userId = Auth::user()->id;
+        $userRole = UserRole::where('user_id', $userId)->first();
+        if($userRole->role_id == 2)
+        {
+            return true;
+        }
+        return false;
+    }
 
     public function project()
     {
