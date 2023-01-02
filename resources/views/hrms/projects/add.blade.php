@@ -15,9 +15,9 @@
                         <a href="/dashboard"> Dashboard </a>
                     </li>
                     <li class="breadcrumb-link">
-                        <a href=""> Project </a>
+                        <a href=""> Proyek </a>
                     </li>
-                    <li class="breadcrumb-current-item"> Add project</li>
+                    <li class="breadcrumb-current-item"> Tambah Proyek</li>
                 </ol>
             </div>
         </header>
@@ -30,7 +30,7 @@
                         <div class="box box-success">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <span class="panel-title hidden-xs"> Add Project </span>
+                                    <span class="panel-title hidden-xs"> Tambah Proyek </span>
                                 </div>
 
                                 <div class="panel-body pn">
@@ -44,7 +44,7 @@
                                             {!! Form::open(['class' => 'form-horizontal']) !!}
 
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Project </label>
+                                                <label class="col-md-3 control-label"> Judul Proyek </label>
                                                 <div class="col-md-6">
                                                     <input type="text" name="name" id="input002"
                                                            class="select2-single form-control" placeholder="Name"
@@ -53,23 +53,23 @@
                                             </div>
 
                                                 <div class="form-group">
-                                                    <label class="col-md-3 control-label"> Description </label>
+                                                    <label class="col-md-3 control-label"> Detail Proyek </label>
                                                     <div class="col-md-6">
                                                         <textarea class="form-control" name="description"></textarea>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label class="col-md-3 control-label"> Project Code </label>
+                                                    <label class="col-md-3 control-label">Nomor Proyek </label>
                                                     <div class="col-md-6">
                                                         <input type="text" name="code" id="input002"
-                                                               class="select2-single form-control" placeholder="Project Code"
+                                                               class="select2-single form-control" placeholder="Proyek Code"
                                                                required>
                                                     </div>
                                                 </div>
 
-                                            <div class="form-group">
-                                                <label class="col-md-3 control-label"> Client </label>
+                                            <!-- <div class="form-group">
+                                                <label class="col-md-3 control-label"> Agen </label>
                                                 <div class="col-md-6">
                                                     <select class="selectpicker form-control" data-done-button="true"
                                                             name="client_id" required>
@@ -79,7 +79,7 @@
                                                         @endforeach
                                                     </select>
                                                 </div>
-                                            </div>
+                                            </div> -->
 
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label"></label>
@@ -88,7 +88,7 @@
                                                     <input type="submit" class="btn btn-bordered btn-info btn-block"
                                                            value="Save">
                                                 </div>
-                                                <div class="col-md-2"><a href="/add-project">
+                                                <div class="col-md-2"><a href="/Tambah-Proyek">
                                                         <input type="button"
                                                                class="btn btn-bordered btn-success btn-block"
                                                                value="Reset"></a>

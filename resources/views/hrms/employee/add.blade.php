@@ -261,7 +261,7 @@
                              <a href="#"> Edit Details</a>
                          </li>--}}
                         <li class="breadcrumb-link">
-                            <a href="/dashboard"> Employees </a>
+                            <a href="/dashboard"> Pegawai </a>
                         </li>
                         <li class="breadcrumb-current-item"> Edit details of {{$emps->name}} </li>
                     </ol>
@@ -280,9 +280,9 @@
                             <a href="/dashboard">Dashboard</a>
                         </li>
                         <li class="breadcrumb-link">
-                            <a href="/add-employee"> Karyawan </a>
+                            <a href="/add-employee"> Pegawai </a>
                         </li>
-                        <li class="breadcrumb-current-item"> Tambah Karyawan</li>
+                        <li class="breadcrumb-current-item"> Tambah Pegawai</li>
                     </ol>
                 </div>
 
@@ -364,7 +364,7 @@
 
                                     <div class="section">
                                         <label for="input002">
-                                            <h6 class="mb20 mt40">Nama Karyawan </h6>
+                                            <h6 class="mb20 mt40">Nama Pegawai </h6>
                                         </label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')

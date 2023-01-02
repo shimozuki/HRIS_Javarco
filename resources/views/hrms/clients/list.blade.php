@@ -16,9 +16,9 @@
                         <a href="/dashboard"> Dashboard </a>
                     </li>
                     <li class="breadcrumb-link">
-                        <a href=""> Clients </a>
+                        <a href=""> Agen </a>
                     </li>
-                    <li class="breadcrumb-current-item"> Client Listings </li>
+                    <li class="breadcrumb-current-item"> List Agen </li>
                 </ol>
             </div>
         </header>
@@ -49,12 +49,12 @@
                                         <table class="table allcp-form theme-warning tc-checkbox-1 fs13">
                                             <thead>
                                             <tr class="bg-light">
-                                                <th class="text-center">Id</th>
-                                                <th class="text-center">Name</th>
-                                                <th class="text-center">Address</th>
-                                                <th class="text-center">Company</th>
-                                                <th class="text-center">Code</th>
-                                                <th class="text-center">Actions</th>
+                                                <th class="text-center">No</th>
+                                                <th class="text-center">Nama</th>
+                                                <th class="text-center">Alamat</th>
+                                                <th class="text-center">Toko</th>
+                                                <th class="text-center">Nomor</th>
+                                                <th class="text-center">Aksi</th>
                                             </tr>
                                             </thead>
 

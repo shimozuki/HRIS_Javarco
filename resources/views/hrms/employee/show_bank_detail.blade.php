@@ -16,9 +16,9 @@
                         <a href="/dashboard"> Dashboard </a>
                     </li>
                     <li class="breadcrumb-link">
-                        <a href=""> Employee </a>
+                        <a href=""> Bank </a>
                     </li>
-                    <li class="breadcrumb-current-item"> Bank Details </li>
+                    <li class="breadcrumb-current-item"> Data Bank </li>
                 </ol>
             </div>
         </header>
@@ -50,11 +50,11 @@
                                         <thead>
                                         <tr class="bg-light">
                                             <th class="text-center">Id</th>
-                                            <th class="text-center">Employee</th>
-                                            <th class="text-center">Bank Name</th>
-                                            <th class="text-center">Account Number</th>
-                                            <th class="text-center">Ifsc Code</th>
-                                            <th class="text-center">Pf Account Number</th>
+                                            <th class="text-center">Pegawai</th>
+                                            <th class="text-center">Nama Bank</th>
+                                            <th class="text-center">Nomor Rekening</th>
+                                            <th class="text-center">Code Bank</th>
+                                            <th class="text-center">Nomor Kartu</th>
                                             <th class="text-center">Actions</th>
                                         </tr>
                                         </thead>

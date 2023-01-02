@@ -64,17 +64,17 @@
     <li>
         <a class="accordion-toggle" href="/dashboard">
             <span class="fa fa-user"></span>
-            <span class="sidebar-title">karyawan</span>
+            <span class="sidebar-title">Pegawai</span>
             <span class="caret"></span>
         </a>
         <ul class="nav sub-nav">
             <li>
                 <a href="{{route('add-employee')}}">
-                    <span class="glyphicon glyphicon-tags"></span> Tambah Karyawan </a>
+                    <span class="glyphicon glyphicon-tags"></span> Tambah Pegawai </a>
             </li>
             <li>
                 <a href="{{route('employee-manager')}}">
-                    <span class="glyphicon glyphicon-tags"></span> Data karyawan </a>
+                    <span class="glyphicon glyphicon-tags"></span> Data Pegawai </a>
             </li>
             <!-- <li>
                     <a href="{{route('upload-emp')}}">
@@ -123,12 +123,12 @@
 
             <li>
                 <a href="{{route('assign-project')}}">
-                    <span class="glyphicon glyphicon-tags"></span> Pekerjaan</a>
+                    <span class="glyphicon glyphicon-tags"></span> Pilih Pegawai</a>
             </li>
 
             <li>
                 <a href="{{route('project-assignment-listing')}}">
-                    <span class="glyphicon glyphicon-tags"></span> List Pekerjaan</a>
+                    <span class="glyphicon glyphicon-tags"></span> List Pegawai Proyek</a>
             </li>
         </ul>
     </li>
@@ -267,7 +267,7 @@
             @if(\Auth::user()->notAnalyst())
             <li>
                 <a href="/add-training-invite">
-                    <span class="fa fa-desktop"></span> Tambah Karyawan Magang </a>
+                    <span class="fa fa-desktop"></span> Tambah Pegawai Magang </a>
             </li>
             @endif
             <li>

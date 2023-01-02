@@ -16,9 +16,9 @@
                         <a href="/dashboard"> Dashboard </a>
                     </li>
                     <li class="breadcrumb-link">
-                        <a href=""> Assigned Project </a>
+                        <a href=""> Pilih Pegawai </a>
                     </li>
-                    <li class="breadcrumb-current-item"> Project Assignment Listings </li>
+                    <li class="breadcrumb-current-item"> Pennagung Jawab </li>
                 </ol>
             </div>
         </header>
@@ -36,7 +36,7 @@
                         <div class="box box-success">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <span class="panel-title hidden-xs"> Project Assignment Listings </span>
+                                    <span class="panel-title hidden-xs"> Listing proyek </span>
                                 </div>
                                 <div class="panel-body pn">
                                     @if(Session::has('flash_message'))
@@ -49,12 +49,12 @@
                                         <table class="table allcp-form theme-warning tc-checkbox-1 fs13">
                                             <thead>
                                             <tr class="bg-light">
-                                                <th class="text-center">Id</th>
-                                                <th class="text-center">Employee</th>
-                                                <th class="text-center">Project</th>
-                                                <th class="text-center">Issuing Authority</th>
-                                                <th class="text-center">Date of Assignment</th>
-                                                <th class="text-center">Date of Release</th>
+                                                <th class="text-center">No</th>
+                                                <th class="text-center">Pegawai</th>
+                                                <th class="text-center">Proyek</th>
+                                                <th class="text-center">Penangung Jawab</th>
+                                                <th class="text-center">Tanggal mulai</th>
+                                                <th class="text-center">Tanggal Berakhir</th>
                                                 <th class="text-center">Actions</th>
                                             </tr>
                                             </thead>

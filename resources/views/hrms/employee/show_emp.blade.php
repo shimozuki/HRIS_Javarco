@@ -16,9 +16,9 @@
                     <a href="/dashboard"> Dashboard </a>
                 </li>
                 <li class="breadcrumb-link">
-                    <a href=""> Employees </a>
+                    <a href=""> Pegawai </a>
                 </li>
-                <li class="breadcrumb-current-item"> Employee Manager</li>
+                <li class="breadcrumb-current-item"> Data Pegawai</li>
             </ol>
         </div>
     </header>
@@ -36,7 +36,7 @@
                     <div class="box box-success">
                     <div class="panel">
                         <div class="panel-heading">
-                            <span class="panel-title hidden-xs">Employee Lists</span><br />
+                            <span class="panel-title hidden-xs">List Pegawai</span><br />
                         </div><br />
                         @if(Session::has('failed'))
                             <div class="alert alert-danger">
@@ -80,16 +80,16 @@
                                 <table class="table allcp-form theme-warning tc-checkbox-1 fs13">
                                     <thead>
                                     <tr class="bg-light">
-                                        <th class="text-center">NO</th>
-                                        <th class="text-center">Code</th>
-                                        <th class="text-center">Name</th>
-                                        <th class="text-center">Status</th>
-                                        <th class="text-center">Role</th>
-                                        <th class="text-center">Joining Date</th>
-                                        <th class="text-center">Address</th>
-                                        <th class="text-center">Mobile Number</th>
-                                        <th class="text-center">Department</th>
-                                        <th class="text-center">Actions</th>
+                                        <th class="text-center">No.</th>
+                                        <th class="text-center">Id Pegawai</th>
+                                        <th class="text-center">Nama</th>
+                                        <th class="text-center">Absen</th>
+                                        <th class="text-center">Divisi</th>
+                                        <th class="text-center">Tanggal Bergabung</th>
+                                        <th class="text-center">Alamat</th>
+                                        <th class="text-center">No Whatsapp</th>
+                                        <th class="text-center">Jabatan</th>
+                                        <th class="text-center">Aksi</th>
                                     </tr>
                                     </thead>
                                     <tbody>

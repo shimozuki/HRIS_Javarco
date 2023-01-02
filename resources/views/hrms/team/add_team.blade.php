@@ -16,9 +16,9 @@
                     <a href="/dashboard"> Dashboard </a>
                 </li>
                 <li class="breadcrumb-link">
-                    <a href=""> Teams </a>
+                    <a href=""> Team </a>
                 </li>
-                <li class="breadcrumb-current-item"> Add Team </li>
+                <li class="breadcrumb-current-item"> Tambah Team </li>
             </ol>
         </div>
     </header>
@@ -31,7 +31,7 @@
                         <div class="box box-success">
                         <div class="panel">
                             <div class="panel-heading">
-                                <span class="panel-title hidden-xs"> Add Team </span>
+                                <span class="panel-title hidden-xs"> Tambah Team </span>
                             </div>
 
                             <div class="panel-body pn">
@@ -46,7 +46,7 @@
                                         {{--<form class="form-horizontal" role="form">--}}
                                             {!! Form::open(['class' => 'form-horizontal']) !!}
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Team Name </label>
+                                                <label class="col-md-3 control-label"> Nama Team</label>
                                                 <div class="col-md-6">
                                                     <input type="text" placeholder="name of team..." name="team_name"
                                                            id="input002" class="select2-single form-control" required>

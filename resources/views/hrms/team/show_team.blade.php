@@ -49,11 +49,11 @@
                                 <table class="table allcp-form theme-warning tc-checkbox-1 fs13">
                                     <thead>
                                     <tr class="bg-light">
-                                        <th class="text-center">Id</th>
-                                        <th class="text-center">Team Name</th>
+                                        <th class="text-center">No</th>
+                                        <th class="text-center">Nama Team</th>
                                         <th class="text-center">Manager</th>
-                                        <th class="text-center">Team Leader</th>
-                                        <th class="text-center">Member</th>
+                                        <th class="text-center">Owner</th>
+                                        <th class="text-center">Pegawai</th>
                                         <th class="text-center">Action</th>
                                     </tr>
                                     </thead>

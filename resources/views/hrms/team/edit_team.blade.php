@@ -45,7 +45,7 @@
                                     @endif
                                     {!! Form::open(['class' => 'form-horizontal']) !!}
                                         <div class="form-group">
-                                            <label class="col-md-3 control-label"> Team Name </label>
+                                            <label class="col-md-3 control-label"> Nama Team </label>
                                             <div class="col-md-6">
                                                 <input type="text" placeholder="name of team..." name="team_name"
                                                        value="{{$edit[0]->name}}" class="select2-single form-control" required>
@@ -54,7 +54,7 @@
 
 
                                         <div class="form-group">
-                                            <label class="col-md-3 control-label"> Select Team Manager</label>
+                                            <label class="col-md-3 control-label"> Pilih mananger Team</label>
                                             <div class="col-md-6">
                                                 <select class="selectpicker form-control" data-done-button="true"
                                                         name="manager_id" required>
@@ -73,7 +73,7 @@
 
 
                                         <div class="form-group">
-                                            <label class="col-md-3 control-label"> Select Team Leader</label>
+                                            <label class="col-md-3 control-label"> Pilih Owner Team</label>
                                             <div class="col-md-6">
                                                 <select class="selectpicker form-control" data-done-button="true"
                                                         name="leader_id" required>
@@ -91,7 +91,7 @@
 
 
                                         <div class="form-group">
-                                            <label class="col-md-3 control-label"> Select Team Members </label>
+                                            <label class="col-md-3 control-label"> Select Pegawai </label>
                                             <div class="col-md-6">
                                                 <select id="done" class="selectpicker form-control"
                                                         multiple data-done-button="true" name="member_id[]" required>

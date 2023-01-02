@@ -16,9 +16,9 @@
                         <a href="/dashboard"> Dashboard </a>
                     </li>
                     <li class="breadcrumb-link">
-                        <a href=""> Projects </a>
+                        <a href=""> Proyek </a>
                     </li>
-                    <li class="breadcrumb-current-item"> Projects Listing</li>
+                    <li class="breadcrumb-current-item"> Data Proyek</li>
                 </ol>
             </div>
         </header>
@@ -36,7 +36,7 @@
                         <div class="box box-success">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <span class="panel-title hidden-xs"> Projects List </span>
+                                    <span class="panel-title hidden-xs"> Data Proyek </span>
                                 </div>
                                 <div class="panel-body pn">
                                     @if(Session::has('flash_message'))
@@ -49,12 +49,12 @@
                                         <table class="table allcp-form theme-warning tc-checkbox-1 fs13">
                                             <thead>
                                             <tr class="bg-light">
-                                                <th class="text-center">Id</th>
-                                                <th class="text-center">Project Name</th>
-                                                <th class="text-center">Description</th>
-                                                <th class="text-center">Project Code</th>
-                                                <th class="text-center">Client Name</th>
-                                                <th class="text-center">Actions</th>
+                                                <th class="text-center">No</th>
+                                                <th class="text-center">Nama Proyek</th>
+                                                <th class="text-center">Detail</th>
+                                                <th class="text-center">Nomor Proyek</th>
+                                                <!-- <th class="text-center">Client Name</th> -->
+                                                <th class="text-center">Aksi</th>
                                             </tr>
                                             </thead>
 
@@ -65,7 +65,7 @@
                                                     <td class="text-center">{{$project->name}}</td>
                                                     <td class="text-center">{{$project->description}}</td>
                                                     <td class="text-center">{{$project->code}}</td>
-                                                    <td class="text-center">{{$project['client']->name}}</td>
+                                                    <!-- <td class="text-center">{{$project['client']->name}}</td> -->
                                                     <td class="text-center">
                                                         <div class="btn-group text-right">
                                                             <button type="button"

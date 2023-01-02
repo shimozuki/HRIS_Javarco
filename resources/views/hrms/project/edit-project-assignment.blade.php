@@ -17,7 +17,7 @@
                             <a href="/dashboard"> Dashboard </a>
                         </li>
                         <li class="breadcrumb-link">
-                            <a href=""> Projects </a>
+                            <a href=""> Proyek </a>
                         </li>
                         <li class="breadcrumb-current-item"> Edit </li>
                     </ol>
@@ -34,9 +34,9 @@
                             <a href="/dashboard"> Dashboard </a>
                         </li>
                         <li class="breadcrumb-link">
-                            <a href=""> Projects </a>
+                            <a href=""> Proyek </a>
                         </li>
-                        <li class="breadcrumb-current-item"> Assign projects </li>
+                        <li class="breadcrumb-current-item"> Pilih Pegawai </li>
                     </ol>
                 @endif
             </div>
@@ -51,9 +51,9 @@
                             <div class="panel">
                                 <div class="panel-heading">
                                     @if(\Route::getFacadeRoot()->current()->uri() == 'edit-project-assignment/{id}')
-                                        <span class="panel-title hidden-xs"> Edit Project Assignment </span>
+                                        <span class="panel-title hidden-xs"> Edit</span>
                                     @else
-                                        <span class="panel-title hidden-xs"> Assign Project</span>
+                                        <span class="panel-title hidden-xs"> Pilih Pegawai</span>
                                     @endif
                                 </div>
 
@@ -68,7 +68,7 @@
                                             {!! Form::open(['class' => 'form-horizontal']) !!}
 
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Select Employee </label>
+                                                <label class="col-md-3 control-label"> Select Pegawai </label>
                                                 <div class="col-md-6">
                                                     <select class="select2-multiple form-control select-primary"
                                                             name="emp_id" required>
@@ -86,7 +86,7 @@
 
 
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Select Project </label>
+                                                <label class="col-md-3 control-label"> Select Proyek </label>
                                                 <div class="col-md-6">
                                                     <select class="select2-multiple form-control select-primary"
                                                             name="project_id" required>
@@ -103,7 +103,7 @@
 
 
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Select Issuing Authority </label>
+                                                <label class="col-md-3 control-label"> Penangung Jawab </label>
                                                 <div class="col-md-6">
                                                     <select class="select2-multiple form-control select-primary"
                                                             name="authority_id" required>
@@ -120,7 +120,7 @@
 
 
                                             <div class="form-group">
-                                                <label for="datepicker1" class="col-md-3 control-label"> Date of Assignment </label>
+                                                <label for="datepicker1" class="col-md-3 control-label"> Tanggal Mulai </label>
                                                 <div class="col-md-6">
 
                                                     <div class="input-group">
@@ -136,7 +136,7 @@
 
 
                                             <div class="form-group">
-                                                <label for="datepicker4" class="col-md-3 control-label"> Date of Release </label>
+                                                <label for="datepicker4" class="col-md-3 control-label"> Tanggal Berakhir </label>
                                                 <div class="col-md-6">
                                                     <div class="input-group">
                                                         <div class="input-group-addon">

@@ -15,9 +15,9 @@
                         <a href="/dashboard"> Dashboard </a>
                     </li>
                     <li class="breadcrumb-link">
-                        <a href=""> Projects </a>
+                        <a href=""> Proyek </a>
                     </li>
-                    <li class="breadcrumb-current-item"> Edit Project</li>
+                    <li class="breadcrumb-current-item"> Edit Proyek</li>
                 </ol>
             </div>
         </header>
@@ -44,7 +44,7 @@
                                             {!! Form::open(['class' => 'form-horizontal']) !!}
 
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Project </label>
+                                                <label class="col-md-3 control-label"> Judul Proyek </label>
                                                 <div class="col-md-6">
                                                     <input type="text" name="name" id="input002"
                                                            class="select2-single form-control" placeholder="Name" value="{{isset($project->name)? $project->name:'' }}"
@@ -53,14 +53,14 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Description </label>
+                                                <label class="col-md-3 control-label"> Detail </label>
                                                 <div class="col-md-6">
                                                     <textarea class="form-control" name="description">{{isset($project->description) ? $project->description:''}}</textarea>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Project Code </label>
+                                                <label class="col-md-3 control-label"> Nomor Proyek </label>
                                                 <div class="col-md-6">
                                                     <input type="text" name="code" id="input002"
                                                            class="select2-single form-control" placeholder="Project Code" value="{{isset($project->code)? $project->code:''}}"
@@ -68,7 +68,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="form-group">
+                                            <!-- <div class="form-group">
                                                 <label class="col-md-3 control-label"> Client </label>
                                                 <div class="col-md-6">
                                                  {!! Form::select('client_id', $model->clients, $project->client_id, ['class' => 'form-control']) !!}
@@ -80,7 +80,7 @@
                                                         @endforeach
                                                     </select>--}}
                                                 </div>
-                                            </div>
+                                            </div> -->
 
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label"></label>

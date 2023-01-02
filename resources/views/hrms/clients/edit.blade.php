@@ -16,9 +16,9 @@
                         <a href="/dashboard"> Dashboard </a>
                     </li>
                     <li class="breadcrumb-link">
-                        <a href=""> Client </a>
+                        <a href=""> Agen </a>
                     </li>
-                    <li class="breadcrumb-current-item"> Edit Client</li>
+                    <li class="breadcrumb-current-item"> Edit Agen</li>
                 </ol>
             </div>
         </header>
@@ -45,28 +45,28 @@
                                             {!! Form::open(['class' => 'form-horizontal']) !!}
 
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Client </label>
+                                                <label class="col-md-3 control-label"> Agen </label>
                                                 <div class="col-md-6">
                                                     <input type="text" name="name" id="input002" class="select2-single form-control" placeholder="Name" value="{{$client->name}}" required>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Address </label>
+                                                <label class="col-md-3 control-label"> Alamat </label>
                                                 <div class="col-md-6">
                                                     <textarea class="select2-single form-control" rows="3" id="address" placeholder="Client Address" name="address">{{$client->address}}</textarea>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Company </label>
+                                                <label class="col-md-3 control-label">Toko </label>
                                                 <div class="col-md-6">
                                                     <input type="text" name="company" id="input002" class="select2-single form-control" placeholder="Company" value="{{$client->company}}">
                                                 </div>
                                             </div>
 
                                             <div class="form-group code-group">
-                                                <label class="col-md-3 control-label"> Code </label>
+                                                <label class="col-md-3 control-label"> Nomor </label>
                                                 <div class="col-md-6">
                                                     <input type="text" name="code" class="select2-single form-control" placeholder="Unique Code" required value="{{$client->code}}">
                                                 </div>

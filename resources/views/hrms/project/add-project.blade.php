@@ -16,9 +16,9 @@
                         <a href="/dashboard"> Dashboard </a>
                     </li>
                     <li class="breadcrumb-link">
-                        <a href=""> Project </a>
+                        <a href=""> Proyek </a>
                     </li>
-                    <li class="breadcrumb-current-item"> Add Project </li>
+                    <li class="breadcrumb-current-item"> Add Proyek </li>
                 </ol>
             </div>
         </header>
@@ -31,7 +31,7 @@
                         <div class="box box-success">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <span class="panel-title hidden-xs"> Add Project </span>
+                                    <span class="panel-title hidden-xs"> Add Proyek </span>
                                 </div>
 
                                 <div class="panel-body pn">
@@ -46,7 +46,7 @@
                                             {{--<form class="form-horizontal" role="form">--}}
                                             {!! Form::open(['class' => 'form-horizontal']) !!}
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Project Name </label>
+                                                <label class="col-md-3 control-label"> Judul Proyek </label>
                                                 <div class="col-md-6">
                                                     <input type="text" placeholder="project name..." name="project_name"
                                                            id="input002" value="{{ isset($result) ? $result->name : '' }}" class="select2-single form-control" required>
@@ -54,7 +54,7 @@
                                             </div>
 
                                                 <div class="form-group">
-                                                    <label class="col-md-3 control-label"> Description </label>
+                                                    <label class="col-md-3 control-label"> Detail </label>
                                                     <div class="col-md-6">
 
                                                         @if(\Route::getFacadeRoot()->current()->uri() == 'edit-project/{id}')
@@ -67,18 +67,18 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group code-group">
-                                                    <label class="col-md-3 control-label"> Code </label>
+                                                    <label class="col-md-3 control-label"> Nomor Proyek </label>
                                                     <div class="col-md-6">
                                                         <input type="text" name="code" id="code" value="{{ isset($result) ? $result->code : '' }}" class="select2-single form-control" placeholder="Code" required>
                                                     </div>
                                                 </div>
 
-                                                <div class="form-group">
+                                                <!-- <div class="form-group">
                                                     <label class="col-md-3 control-label"> Select Client </label>
                                                     <div class="col-md-6">
                                                         {!! Form::select('client_id', $clients, null, ['class' => 'selectpicker form-control', 'data-done-button' => 'true']) !!}
                                                     </div>
-                                                </div>
+                                                </div> -->
 
                                                 <div class="form-group">
                                                 <label class="col-md-3 control-label"></label>
