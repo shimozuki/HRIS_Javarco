@@ -288,8 +288,6 @@
             <span class="sidebar-title"> Rapat Internal </span>
         </a>
     </li>
-
-
     <li>
         <a href="/create-event">
             <span class="fa fa-calendar-o"></span>
