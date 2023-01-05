@@ -30,6 +30,7 @@
     <!-- -------------- Column Center -------------- -->
     <div class="chute chute-center">
 
+    
         <!-- -------------- Quick Links -------------- -->
         <div class="row">
             @if(Auth::user()->isHR())
